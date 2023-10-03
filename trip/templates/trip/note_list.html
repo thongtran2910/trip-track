@@ -1,7 +1,7 @@
 {% extends 'trip/_base.html' %}
 
 {% block content %}
-<h3 class="text-xl pb-4">Notes:</h3>
+<h1 class="text-4xl pb-4">Notes:</h1>
 <div class="flex gap-2 flex-wrap">
     {% for note in object_list %}
     <a href="{% url 'note-detail' note.pk %}">
